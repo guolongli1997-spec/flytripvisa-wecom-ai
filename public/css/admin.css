@@ -1,0 +1,12 @@
+body{margin:0;background:#0a0b0e;color:#e8eaed;font-family:Inter,system-ui,sans-serif}
+.admin-wrap{max-width:760px;margin:40px auto;padding:0 16px;display:flex;flex-direction:column;gap:18px}
+h1{font-size:22px}
+.card{background:#111319;border:1px solid rgba(255,255,255,.08);border-radius:16px;padding:18px}
+h2{font-size:15px;margin-top:0}
+label{display:block;font-size:12px;color:#8b90a0;margin:12px 0 6px}
+input{width:100%;padding:10px;border-radius:10px;background:#0c0e13;border:1px solid rgba(255,255,255,.1);color:#fff}
+.row{display:flex;gap:10px;margin-top:14px;align-items:center}
+button{background:#07c160;color:#04130a;border:none;padding:10px 14px;border-radius:10px;font-weight:700;cursor:pointer}
+.status{padding:10px;border-radius:10px;background:#161922;margin-bottom:10px}
+.msg{margin-top:10px;font-size:13px;color:#9fe6c0}
+pre{background:#0c0e13;padding:12px;border-radius:10px;overflow:auto}
