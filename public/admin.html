@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>WeCom Admin · FlyTripVisa</title>
+  <link rel="stylesheet" href="/css/admin.css" />
+</head>
+<body>
+  <div class="admin-wrap">
+    <h1>WeCom Smart Robot</h1>
+
+    <section class="card">
+      <h2>Connection</h2>
+      <div id="statusBox" class="status">Loading…</div>
+      <div class="row">
+        <button id="connectBtn">Connect</button>
+        <button id="disconnectBtn">Disconnect</button>
+        <button id="testBtn">Test</button>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Bot Configuration</h2>
+      <label>Robot Name</label>
+      <input id="botName" />
+
+      <label>Bot ID</label>
+      <input id="botId" />
+
+      <label>Secret</label>
+      <input id="secret" type="password" placeholder="••••••••" />
+
+      <label>WebSocket URL</label>
+      <input id="wsUrl" value="wss://openws.work.weixin.qq.com" />
+
+      <div class="row">
+        <label><input type="checkbox" id="enabled" checked /> Enable Integration</label>
+      </div>
+
+      <div class="row">
+        <button id="saveBtn">Save Configuration</button>
+      </div>
+      <div id="cfgMsg" class="msg"></div>
+    </section>
+
+    <section class="card">
+      <h2>Stats</h2>
+      <pre id="logs">—</pre>
+    </section>
+  </div>
+
+  <script src="/js/admin.js"></script>
+</body>
+</html>
