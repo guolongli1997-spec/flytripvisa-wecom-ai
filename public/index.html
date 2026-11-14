@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>FlyTripVisa AI Chat</title>
+  <link rel="stylesheet" href="/css/chat.css" />
+</head>
+<body>
+  <div class="chat-shell">
+    <aside class="chat-sidebar">
+      <div class="brand">
+        <span class="logo">✈️</span> FlyTripVisa AI
+      </div>
+      <button id="newChat" class="ghost-btn">+ New Conversation</button>
+      <div class="conn-status">
+        WeCom: <b id="wecomStatus">checking…</b>
+      </div>
+    </aside>
+
+    <main class="chat-main">
+      <header class="chat-header">
+        <div>
+          <h1>AI Travel Assistant</h1>
+          <p class="muted">Visa, flights, hotels, eSIM, business setup</p>
+        </div>
+        <span id="connDot" class="dot grey"></span>
+      </header>
+
+      <section id="messages" class="messages">
+        <div class="empty-state">
+          Ask anything about travel documents, visa requirements, or bookings.
+        </div>
+      </section>
+
+      <footer class="composer">
+        <textarea id="input" rows="1" placeholder="Type your message…"></textarea>
+        <button id="send">Send</button>
+      </footer>
+    </main>
+  </div>
+
+  <script src="/js/chat.js"></script>
+</body>
+</html>
